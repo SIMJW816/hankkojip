@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="내 취향에 맞는 한 끼, 스마트 양념 계량 대시보드">
+  <title>한꼬집 — 스마트 양념 스튜디오</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <aside class="sidebar">
+    <a href="#dashboard" class="brand"><span class="brand-mark">✳</span><span>한꼬집<span class="brand-en">HANKKOJIP STUDIO</span></span></a>
+    <p class="nav-caption">MY KITCHEN</p>
+    <nav aria-label="주 메뉴" id="navigation"></nav>
+    <div class="sidebar-bottom"><div class="mini-device"><span class="connection-dot"></span><div><strong>나의 양념 스테이션</strong><small id="device-status">장치 상태 확인 중</small></div></div><div class="team"><span class="avatar">8</span><div>지능형 IoT 설계<small>8조 프로젝트</small></div><span class="team-label">LAB</span></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">나의 주방 <span>/</span> <strong id="breadcrumb">대시보드</strong></div><div class="header-actions"><span class="demo-pill" id="device-mode">연결 확인</span><span id="device-controls" hidden><button class="btn secondary" data-action="control-settings">제어 키</button></span><span class="header-avatar">J</span></div></header>
+    <main id="main" tabindex="-1"><div class="loading">주방을 준비하고 있어요…</div></main>
+    <footer>한꼬집 <span>작은 계량이 만드는, 한결같은 맛.</span><span>INTELLIGENT IoT DESIGN · TEAM 08</span></footer>
+  </div>
+  <dialog id="modal"><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
